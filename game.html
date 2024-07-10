@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Background Image Swap</title>
+    <style>
+        
+        body {
+            background-image: url('wallpaperflare.com_wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>virat kohli</h1><br>
+    <h3>Virat Kohli (Hindi pronunciation: [ʋɪˈɾɑːʈ ˈkoːɦli] ⓘ; born 5 November 1988) is an Indian international cricketer who currently plays Test cricket and ODI cricket for India. Kohli is a former T20I player and a former captain of the Indian national cricket team. He is a right-handed batsman and an occasional unorthodox right arm quick bowler. He currently represents Royal Challengers Bengaluru in the IPL and Delhi in domestic cricket. He holds the record as the highest run-scorer in IPL, ranks third in T20I, third in ODI, and stands as the fourth-highest in international cricket.[</h3>
+    <script>
+        const imageSources = [
+            'th (1).jpeg', 'th.jpeg', 'Virat-Kohli-wallpaper.jpg',  'Virat-Kohli-wallpaper.jpg', 
+            
+        ];
+
+        function changeBackgroundImage() {
+            const randomIndex = Math.floor(Math.random() * imageSources.length);
+            document.body.style.backgroundImage = `url(${imageSources[randomIndex]})`;
+        }
+
+        // Change the background image every 5 seconds (1000 milliseconds)
+        setInterval(changeBackgroundImage, 1000);
+    </script>
+    
+</body>
+</html>
